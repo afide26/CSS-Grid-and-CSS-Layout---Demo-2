@@ -5,54 +5,26 @@
   margin: 0;
 }
 
+a:link,
+a {
+  color: #f5f5f6;
+  text-decoration: none;
+}
+
 html {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 7fr auto 2fr;
-}
-
-
 .zone {
-  padding: 30px 50px;
   margin: 0;
   cursor: pointer;
-  display: inline-block;
   color: #FFF;
   font-size: 2em;
   /* border-radius: 4px; */
   border: 1px solid #bbb;
   transition: all 0.3s linear;
 }
-
-.green {
-  border-radius: none !important;
-  margin: 0;
-  padding: 1rem;
-  font-size: 1rem;
-  display: grid;
-  grid-template-columns: repeat(autofill, min-max(50px, 1fr));
-  grid-template-rows: 1fr;
-}
-
-.green-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  justify-self: self-start;
-}
-
-.green-list li {
-  padding: 5px;
-}
-
-
-
 
 
 .zone:hover {
@@ -61,6 +33,45 @@ html {
   -o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
   box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
 }
+
+/* Navigation */
+.main-nav {
+  display: flex;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.main-nav li {
+  padding: 20px;
+}
+
+.main-nav li a {
+  color: #f5f5f6;
+}
+
+.push {
+  margin-left: auto;
+}
+
+@media only screen and (max-width:600px) {
+  .main-nav {
+    font-size: 1.25rem;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .main-nav li {
+    padding: 5px 10px;
+  }
+
+
+  .push {
+    margin: 0;
+  }
+}
+
+/* End of Navigation */
+
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
