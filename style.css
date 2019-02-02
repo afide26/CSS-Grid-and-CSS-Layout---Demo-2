@@ -63,6 +63,25 @@ html {
 
 /* End of cover styles */
 
+/* Project Grid */
+.grid-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box {
+  background: #58585a;
+  padding: 100px;
+  margin: 20px;
+}
+
+.box>img {
+  width: 100%;
+}
+
+/* End of Project Grid */
+
 /* Media Queries */
 @media only screen and (max-width:600px) {
   .main-nav {
