@@ -53,15 +53,26 @@ html {
   margin-left: auto;
 }
 
+/* Cover Styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+/* End of cover styles */
+
+/* Media Queries */
 @media only screen and (max-width:600px) {
   .main-nav {
-    font-size: 1.25rem;
+    font-size: 1rem;
     flex-direction: column;
-    padding: 0;
+    padding: 10px 0;
   }
 
   .main-nav li {
-    padding: 5px 10px;
+    padding: 5px 20px;
   }
 
 
